@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation on Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tourney">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home" onclick="scrollToSection('sec-1')">HOME</a></li>
+                <li><a href="#about" onclick="scrollToSection('sec-4')">ABOUT</a></li>
+                <li><a href="#gallery" onclick="scrollToSection('sec-5')">GALLERY</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home" class="sec-1 show-animate">
+        <div class="text-container">
+            <h1 class="animate">Hey! </h1>
+            <h1 class="animate">I am Arshiya</h1> 
+            <p class="animate">I am a passionate photographer</p>
+        </div>
+        <img src="images/me.png" alt="Your Alt Text" class="animate" style="--i:3;">
+    </section>
+    <section id="about" class="sec-4">
+        <div class="page-text">
+            <p>Unveil the Beauty<span class="showRight-animate" style="--i:1;"></span></p>
+            <p>Step Inside, Where Every Click Tells a Story<span class="showRight-animate" style="--i:3;"></span></p>
+        </div>
+        <button onclick="scrollToNextSection()">Scroll Down</button>
+    </section>
+    <section id="gallery" class="sec-5">
+        <div class="container">
+            <div class="gallery-container h-2 w-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/3.JPG" alt="nature">
+                    </div>
+                    <div class="text">Georgia</div>
+                </div>
+            </div>
+    
+            <div class="gallery-container w-2 h-3">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/4.JPG" alt="study">
+                    </div>
+                    <div class="text">Georgia</div>
+                </div>
+            </div>
+            <div class="gallery-container h-3 w-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/11.jpg" alt="sport">
+                    </div>
+                    <div class="text">Gujarati Street</div>
+                </div>
+            </div>
+            <div class="gallery-container h-3 w-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/9.JPG" alt="animals">
+                    </div>
+                    <div class="text">EXPO</div>
+                </div>
+            </div>
+            <div class="gallery-container h-4 w-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/2.JPG" alt="kids">
+                    </div>
+                    <div class="text">GEORGIA</div>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/7.JPG" alt="food">
+                    </div>
+                    <div class="text">COP 28</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/1.JPG" alt="cars">
+                    </div>
+                    <div class="text">EMIRATES</div>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/5.JPG" alt="water">
+                    </div>
+                    <div class="text">FLOWERS</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-3">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/10.jpg" alt="planet">
+                    </div>
+                    <div class="text">GUJARATI STREET</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/6.JPG" alt="technology">
+                    </div>
+                    <div class="text">ARCHITECTURE</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/12.JPG" alt="technology">
+                    </div>
+                    <div class="text">THUSHARIGIRI</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-1">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/12.JPG" alt="technology">
+                    </div>
+                    <div class="text">UN DUMANCHE PARIS</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-1">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/12.JPG" alt="technology">
+                    </div>
+                    <div class="text">THUSHARIGIRI</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-1">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/12.JPG" alt="technology">
+                    </div>
+                    <div class="text">THUSHARIGIRI</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-1">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/12.JPG" alt="technology">
+                    </div>
+                    <div class="text">THUSHARIGIRI</div>
+                </div>
+            </div>
+            <div class="gallery-container w-2 h-1">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="images/12.JPG" alt="technology">
+                    </div>
+                    <div class="text">THUSHARIGIRI</div>
+                </div>
+            </div>
+            <div id="modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
